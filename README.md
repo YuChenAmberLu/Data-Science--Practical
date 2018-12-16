@@ -38,7 +38,7 @@
 
 
 ## Question 4 (Write a function of linear regression without using 'lm') 
-#### Create function of a linear regression on binary outcomes
+#### Create a function of linear regression on binary outcomes
 
 
 ## Question 5 (Do statistical learning on quantitative data)
