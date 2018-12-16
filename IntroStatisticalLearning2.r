@@ -1,54 +1,27 @@
----
-title: "FE590.  Assignment #3"
-author: "Yu-Chen Lu 10424779"
-output: pdf_document
----
+library(boot)
 
-## Enter Your Name Here, or "Anonymous" if you want to remain anonymous..
-## Yu-Chen Lu 10424779
-## `r format(Sys.time(), "%Y-%m-%d")`
-
-
-# Instructions
-
-In this assignment, you should use R markdown to answer the questions below.  Simply type your R code into embedded chunks as shown above.
-
-When you have completed the assignment, knit the document into a PDF file, and upload _both_ the .pdf and .Rmd files to Canvas.
-
-Note that you must have LaTeX installed in order to knit the equations below.  If you do not have it installed, simply delete the questions below.
 
 # Question 1 (based on JWHT Chapter 5, Problem 8)
 
-In this problem, you will perform cross-validation on a simulated data set.
+# In this problem, you will perform cross-validation on a simulated data set.
 
-You will use this personalized simulated data set for this problem:
-```{r}
 set.seed(1)
 y <- rnorm(100)
 x <- rnorm(100)
 y <- x - 2*x^2 + rnorm(100)
-```
 
-   (a) In this data set, what is _n_ and what is _p_?
-
-```{r}
-# n is 100 
+# Number of the data created
 length(y)
 
-# p is 2, which are x and y.
-```
-  
-   (b) Create a scatterplot of _x_ against _y_. Comment on what you find.
+# Number of predictors is 2, which are x and y.
    
-```{r}
 # Scatterplot of x against y
 plot(x,y)
-```
 
-   (c) Compute the LOOCV errors that result from fitting the following four models using least squares:
-      1.  $Y = \beta_0 + \beta_1 X + \epsilon$
-```{r}
-library(boot)
+# Compute the LOOCV errors that result from fitting the following four models using least squares:
+# $Y = \beta_0 + \beta_1 X + \epsilon$
+
+
 Data = data.frame(x, y)
 fit.glm.1 = glm(y ~ x)
 delta1 = cv.glm(Data, fit.glm.1)$delta[1]
