@@ -1,9 +1,9 @@
+# Load packages used in this file
 library(ISLR) 
 library(leaps)
 library(MASS) 
 library(data.table)
 library(class)
-attach(Weekly)
 library(boot)
 
 set.seed(1) 
