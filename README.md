@@ -1,4 +1,4 @@
-# Introduction of statistical learning 
+# Practical Data Science and Statistical Learning
 
 #### There are two files and five questions for each file for you to practice statistical learning step by step. 
 
