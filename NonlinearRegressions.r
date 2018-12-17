@@ -1,3 +1,4 @@
+# Load packages used in this file
 library(boot)
 library(leaps)
 library(ISLR)
@@ -8,6 +9,9 @@ library(gbm)
 library(glmnet)
 
 set.seed(1)
+
+# JWHT is referred as to An Introduction to Statistical Learning with Applications in R 
+# by Gareth James, Daniela Witten, Trevor Hastie, and Robert Tibshirani. (Details see reference in README.md)
 
 # -----------------------------------------------------------------------------
 #### #### #### #### #### #### #### #### #### #### #### #### #### #### #### #### 
