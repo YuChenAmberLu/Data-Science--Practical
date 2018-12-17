@@ -4,12 +4,11 @@
 
 
 
-
 ### The first file, StatisticalLearning.r, contains five queations, which cover factor selection, initial analysis, statistical learning on both qualitative and quantitative data. 
 
 
 #### Question 1 (Introduce regsubsets function)
-Demonstrate best subsets, forward selection and backwards elimination to identify a great subset of 'Auto' and take in to my statistical model. 'Auto' is a dataset on http://www-bcf.usc.edu/~gareth/ISL/Auto.data
+Demonstrate best subsets, forward selection and backwards elimination to identify a great subset of `Auto` and take in to my statistical model. `Auto` is a dataset on http://www-bcf.usc.edu/~gareth/ISL/Auto.data
 
 > Best subsets
 
@@ -19,7 +18,7 @@ Demonstrate best subsets, forward selection and backwards elimination to identif
 
 
 #### Question 2 (Initial data analysis)
-Get ideas how to do initial analysis using 'Boston' dataset, which is also a dataset in ISLR.
+Get ideas how to do initial analysis using `Boston` dataset, which is also a dataset in ISLR.
 
 > How many columns?
 
@@ -31,7 +30,7 @@ Get ideas how to do initial analysis using 'Boston' dataset, which is also a dat
 
 
 #### Question 3 (Do statistical learning on binary outcomes)
-Train 'Weekly' dataset, which is also a dataset in ISLR, using Logistic regression, Linear Discriminant Analysis, Quadratic discriminant analysis, and K - nearest neighbor.
+Train `Weekly` dataset, which is also a dataset in ISLR, using Logistic regression, Linear Discriminant Analysis, Quadratic discriminant analysis, and K - nearest neighbor.
 
 > Logistic regression
 
@@ -47,7 +46,7 @@ Create a function of linear regression on binary outcomes
 
 
 #### Question 5 (Do statistical learning on quantitative data)
-Train, test, and predict sales, which is set as response among others factors of 'ads', using linear regression. 'ads' is a dataset on http://www-bcf.usc.edu/~gareth/ISL/Advertising.csv
+Train, test, and predict sales, which is set as response among others factors of `ads`, using linear regression. `ads` is a dataset on http://www-bcf.usc.edu/~gareth/ISL/Advertising.csv
 
 
 
@@ -60,11 +59,11 @@ Compare errors using leave-one-out cross validation on different polynomial term
 
 
 #### Question 2 (Generalized additive models)
-Do statistical learning on out-of-state tuition against other factors in 'College' dataset using gam. 'College' is a dataset in ISLR.
+Do statistical learning on out-of-state tuition against other factors in `College` dataset using gam. `College` is a dataset in ISLR.
 
 
 #### Question 3 (Do statistical learning on binary outcomes)
-Perform cross-validation to choose the optimal number of cuts on Age, a factor in 'Wage' dataset, and then find a fit regression to predict wage.
+Perform cross-validation to choose the optimal number of cuts on Age, a factor in `Wage` dataset, and then find a fit regression to predict wage.
 
 
 #### Question 4 (Classification tree and random forest) 
@@ -72,7 +71,7 @@ In the lab, a classification tree was applied to the `Carseats` data set after c
 
 
 #### Question 5 (Gradient boosted machines and regularized generalized linear models)
-Use boosting (and bagging) to predict Salary in the 'Hitters', a dataset in ISLR. Aslo, compare the mean-squared errors of linear regression and ridge regression. 
+Use boosting (and bagging) to predict Salary in the `Hitters`, a dataset in ISLR. Aslo, compare the mean-squared errors of linear regression and ridge regression. 
 
 
 ### Reference: 
