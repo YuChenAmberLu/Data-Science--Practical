@@ -1,3 +1,9 @@
+---
+title: "Exploratory Data Analysis"
+author: "Yu-Chen (Amber) Lu"
+output: pdf_document
+---
+
 # Problem 1
 Explore realdirect.com thinking about how buyers and sellers would navigate, and how the website is organized. Use the datasets provided for Bronx, Brooklyn, Manhattan, Queens, and Staten Island. Do the following:
 
@@ -6,17 +12,19 @@ Explore realdirect.com thinking about how buyers and sellers would navigate, and
 
 ```{r}
 
-library('plyr')
-library('gdata')
+library(plyr)
+library(gdata)
+library(ggplot2)
+library(lattice)
 
-#setwd()
-#getwd()
+setwd("/Users/yuchenlu/Github")
+getwd()
 
 AllFiles = c("bronx", "brooklyn", "manhattan", "queens", "statenisland")
 
 for ( AllFiles in AllFiles)
 {
-  df = read.xls(paste(".../rollingsales_",AllFiles,".xls",sep=""), pattern="BOROUGH")
+  df = read.xls(paste("DataForExploratoryDataAnalysis/rollingsales_",AllFiles,".xls",sep=""), pattern="BOROUGH")
   
   names(df) = tolower(names(df))   # lower all the columns' names
   # make sure the dates are formatted and values are numerical
@@ -160,11 +168,11 @@ The datasets provided nyt1.csv, nyt2.csv, and nyt3.csv represents three (simulat
 ## Create a new variable, age_group, that categorizes users as “<20”, “20-29”, “30-39”, “40-49”, “50-59”, “60-69”, and “70+”.
 ## \textcolor{red}{Solution:} 
 ```{r}
-setwd("/Users/yuchenlu/STEVENS/FE582/homework")
+setwd("/Users/yuchenlu/Github")
 allnyt = c('nyt1', 'nyt2', 'nyt3')
 for ( allnyt in allnyt)
 {
-  df = read.csv(paste("HW1_F18/",allnyt,".csv",sep=""))
+  df = read.csv(paste("DataForExploratoryDataAnalysis/",allnyt,".csv",sep=""))
   #categorize
   
   df$agecat = cut(df$Age, c(0,20,30,40,50,60,70,Inf), 
@@ -187,7 +195,7 @@ summary(data3)
 ## o Define a new variable to segment or categorize users based on their click behavior.
 ## o Explore the data and make visual and quantitative comparisons across user segments/demographics (<20-year-old males versus <20-year-old females or logged-in versus not, for example).
 ```{r}
-library("ggplot2")
+
 # Plot the distribution of number of impressions for these age categories
 impressions.plot = ggplot(data = data1, 
                            aes(Impressions,
@@ -218,6 +226,7 @@ ggplot(subset(data1, Clicks >0),aes(x=Clicks/Impressions,colour=agecat))+geom_de
 
 
 ```
+
 ```{r}
 # Define a new variable to segment or categorize users 
 # based on their click behavior.
@@ -225,7 +234,6 @@ data1$scode[data1$Impressions==0] = "NI"
 data1$scode[data1$Impressions >0] = "Im"
 data1$scode[data1$Clicks >0] = "Cl"
 
-library(lattice)
 histogram(~as.factor(data1$scode) | data1$agecat, 
           data=data1, type = "count",layout=c(7,1), 
           col=c("blue", "green"), xlab= "click behavior by Age group, 
