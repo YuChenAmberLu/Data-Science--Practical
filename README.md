@@ -1,6 +1,6 @@
 # Practical Data Science and Statistical Learning
 
-#### There are two files and five questions for each file for you to practice statistical learning step by step. 
+#### There are two files and one folder for you to practice data science and statistical learning step by step. 
 
 
 
@@ -9,12 +9,6 @@
 
 #### Question 1 (Introduce regsubsets function)
 Demonstrate best subsets, forward selection and backwards elimination to identify a great subset of `Auto` and take in to my statistical model. `Auto` is a dataset on http://www-bcf.usc.edu/~gareth/ISL/Auto.data
-
-> Best subsets
-
-> Forward selection
-
-> Backwards elimination
 
 
 #### Question 2 (Initial data analysis)
@@ -31,14 +25,6 @@ Get ideas how to do initial analysis using `Boston` dataset, which is also a dat
 
 #### Question 3 (Do statistical learning on binary outcomes)
 Train `Weekly` dataset, which is also a dataset in ISLR, using Logistic regression, Linear Discriminant Analysis, Quadratic discriminant analysis, and K - nearest neighbor.
-
-> Logistic regression
-
-> Linear Discriminant Analysis
-
-> Quadratic discriminant analysis
-
-> K - nearest neighbor
 
 
 #### Question 4 (Write a function of linear regression without using 'lm') 
@@ -72,6 +58,11 @@ In the lab, a classification tree was applied to the `Carseats` data set after c
 
 #### Question 5 (Gradient boosted machines and regularized generalized linear models)
 Use boosting (and bagging) to predict Salary in the `Hitters`, a dataset in ISLR. Aslo, compare the mean-squared errors of linear regression and ridge regression. 
+
+
+
+### The folder, ExploratoryDataAnalysis, has a rmd file, a pdf file, and a dataset folder. The pdf file was kintted by the rmd file. First, I discussed exploratory data analysis on the datasets provided for Bronx, Brooklyn, Manhattan, Queens, and Staten Island to visualize and make comparisons for residential building. Next, I did the exploratory data analysis on datasets provided nyt1.csv, nyt2.csv, and nyt3.csv to visualize some metrics and distributions over time.
+
 
 
 ### Reference: 
