@@ -4,7 +4,8 @@
 
 
 
-### The first file, StatisticalLearning.r, contains five queations, which cover factor selection, initial analysis, statistical learning on both qualitative and quantitative data. 
+## File StatisticalLearning.r
+The first file, StatisticalLearning.r, contains five queations, which cover factor selection, initial analysis, statistical learning on both qualitative and quantitative data. 
 
 
 #### Question 1 (Introduce regsubsets function)
@@ -37,7 +38,8 @@ Train, test, and predict sales, which is set as response among others factors of
 
 
 
-### The second file, NonlinearRegressions.r, contains five queations, which cover cross-validation, generalized additive models, classification tree, random forest, gradient boosted machines, and regularized generalized linear models on quantitative data. 
+## File NonlinearRegressions.r
+The second file, NonlinearRegressions.r, contains five queations, which cover cross-validation, generalized additive models, classification tree, random forest, gradient boosted machines, and regularized generalized linear models on quantitative data. 
 
 
 #### Question 1 (Cross-validation for generalized linear models)
@@ -61,11 +63,12 @@ Use boosting (and bagging) to predict Salary in the `Hitters`, a dataset in ISLR
 
 
 
-### The folder, ExploratoryDataAnalysis, has a rmd file, a pdf file, and a dataset folder. The pdf file was kintted by the rmd file. First, I discussed exploratory data analysis on the datasets provided for Bronx, Brooklyn, Manhattan, Queens, and Staten Island to visualize and make comparisons for residential building. Next, I did the exploratory data analysis on datasets provided nyt1.csv, nyt2.csv, and nyt3.csv to visualize some metrics and distributions over time.
+## Folder ExploratoryDataAnalysis
+The folder, ExploratoryDataAnalysis, has a rmd file, a pdf file, and a dataset folder. The pdf file was kintted by the rmd file. First, I discussed exploratory data analysis on the datasets provided for Bronx, Brooklyn, Manhattan, Queens, and Staten Island to visualize and make comparisons for residential building. Next, I did the exploratory data analysis on datasets provided nyt1.csv, nyt2.csv, and nyt3.csv to visualize some metrics and distributions over time.
 
 
 
-### Reference: 
+## Reference: 
 
 Gareth James, Daniela Witten, Trevor Hastie, and Robert Tibshirani. An Introduction to Statistical Learning with Applications in R. Springer, 2014. **(1)**
 This book is available free from the author's web site at http://www-bcf.usc.edu/~gareth/ISL/ISLR%20Fourth%20Printing.pdf (Links to an external site.)Links to an external site. 
