@@ -1,6 +1,6 @@
 # Practical Data Science and Statistical Learning
 
-#### There are two files and one folder for you to practice data science and statistical learning step by step. 
+#### There are two files and one folder to practice data science and statistical learning step by step. 
 
 
 
