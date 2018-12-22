@@ -12,7 +12,7 @@ The first file, StatisticalLearning.r, contains five queations, which cover fact
 Demonstrate best subsets, forward selection and backwards elimination to identify a great subset of `Auto` and take in to my statistical model. `Auto` is a dataset on http://www-bcf.usc.edu/~gareth/ISL/Auto.data
 
 
-#### Question 2 (Initial data analysis)
+#### Question 2 (Exploratory data analysis)
 Get ideas how to do initial analysis using `Boston` dataset, which is also a dataset in ISLR.
 
 > How many columns?
